@@ -1,1 +1,98 @@
+  177  git clone git@github.com:KawterAb/Exercices.git
+  178  cd Exercices
+  179  cd..
+  180  cd ..
+  181  cd ...
+  182  cd ..
+  183  cat ann
+  184  cat 2016
+  185  cat 2016
+  186  grep ann 2016
+  187  echo "Annotations en 2016 :" > Exercices/comptes.txt
+  188  echo "Annotations en 2016 :" > cd../cd../Exercices/comptes.txt
+  189  echo "Annotations en 2016 :" > ../../Exercices/comptes.txt
+  190  grep "2016" annotations_2016.ann | wc -l >> ../../Exercices/comptes.txt
+  191  grep "^2016" annotations_2016.ann | wc -l >> ../../Exercices/comptes.txt
+  192  grep "^2016^" annotations_2016.ann | wc -l >> ../../Exercices/comptes.txt
+  193  grep "2016^" annotations_2016.ann | wc -l >> ../../Exercices/comptes.txt
+  194  touch comptes.txt
+  195  grep "2016"
+  196  echo "Annotations en 2016 :" > Exercices/comptes.txt
+  197  cd ..
+  198  cd .. 
+  199  echo "Annotations en 2016 :" > Exercices/comptes.txt
+  200  grep "2016" annotations_2016.ann | wc -l >> Exercices/comptes.txt~
+  201  echo "Annotations en 2016 :" > Exercices/comptes.txt
+  202  echo "Annotations en 2016 :" > comptes.txt
+  203  grep "2016" annotations_2016.ann | wc -l >> comptes.txt
+  204  echo "Annotations en 2016 :" > Exercices/comptes.txt
+  205  echo "Annotations en 2016 :" > comptes.txt
+  206  grep "2016" annotations_2016.ann | wc -l >> comptes.txt
+  207  echo "Annotations en 2016 :" > Exercices/comptes.txt
+  208  touch comptes.txt
+  209  grep '2016' ~/Bureau/cours/ann/*.ann | wc -l
+  210  grep '2016' cours/ann/*.ann | wc -l
+  211  grep '2016*' cours/ann/*.ann | wc -l
+  212  grep '2016^' cours/ann/*.ann | wc -l
+  213  grep '2016' *.ann | wc -l
+  214  grep '2016' ~/Bureau/cours/ann/*.ann | wc -l
+  215  grep '2016' ~/Bureau/cours/ann/2016/*.ann | wc -l
+  216  grep '2016' ~/Bureau/cours/ann/2017/*.ann | wc -l
+  217  grep '2018' ~/Bureau/cours/ann/2018/*.ann | wc -l
+  218  grep '2016' ~/Bureau/cours/ann/2017/*.ann | wc -l
+  219  grep '2017' ~/Bureau/cours/ann/2017/*.ann | wc -l
+  220  echo "Annotations en 2016 :" > comptes.txt
+  221  grep '2016' ~/Bureau/cours/ann/2016/*.ann | wc -l >> comptes.txt
+  222  echo "Annotations en 2017 :" > comptes.txt
+  223  grep '2017' ~/Bureau/cours/ann/2017/*.ann | wc -l >> comptes.txt
+  224  echo "Annotations en 2018 :" > comptes.txt
+  225  grep '2018' ~/Bureau/cours/ann/2018/*.ann | wc -l >> comptes.txt
+  226  echo "Annotations en 2016 :" >> comptes.txt
+  227  grep '2016' ~/Bureau/cours/ann/2016/*.ann | wc -l >> comptes.txt
+  228  echo "Annotations en 2017 :" >> comptes.txt
+  229  grep '2017' ~/Bureau/cours/ann/2017/*.ann | wc -l >> comptes.txt
+  230  echo "Annotations en 2018 :" >> comptes.txt
+  231  grep '2018' ~/Bureau/cours/ann/2018/*.ann | wc -l >> comptes.txt
+  232  pwd
+  233  git status
+  234  git add .
+  235  git status
+  236  git commit -m "compter les annotations par an"
+  237  git status
+  238  git push
+  239  touch locations.txt
+  240  echo "Annotations par lieu en 2016 :" > ~/Bureau/cours/Exercices/locations.txt
+  241  grep '2016' ~/Bureau/cours/ann/2016/*.ann | grep 'Location' | wc -l >> ~/Bureau/cours/Exercices/locations.txt
+  242  echo "Annotations par lieu en 2017 :" >> ~/Bureau/cours/Exercices/locations.txt
+  243  grep '2017' ~/Bureau/cours/ann/2017/*.ann | grep 'Location' | wc -l >> ~/Bureau/cours/Exercices/locations.txt
+  244  echo "Annotations par lieu en 2018 :" >> ~/Bureau/cours/Exercices/locations.txt
+  245  grep '2018' ~/Bureau/cours/ann/2018/*.ann | grep 'Location' | wc -l >> ~/Bureau/cours/Exercices/locations.txt
+  246  git status
+  247  git add . 
+  248  git commit -m "compter location dans les ann" 
+  249  git push
+  250  grep 'Location' ~/Bureau/cours/ann/2016/*.ann | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_2016.txt
+  251  grep 'Location' ~/Bureau/cours/ann/2016/*.ann | cut -d' ' -f3- | sort | uniq -c | sort -nr > ~/Bureau/cours/Exercices/classement_2016.txt
+  252  grep 'Location' ~/Bureau/cours/ann/2016/*.ann | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_2016.txt
+  253  grep 'Location' ~/Bureau/cours/ann/2016/*.ann | cut | sort | uniq -c | head -n 15 > ~/Bureau/cours/Exercices/classement_2016.txt
+  254  grep 'Location' ~/Bureau/cours/ann/2016/*.ann | cut -f | sort | uniq -c | head -n 15 > ~/Bureau/cours/Exercices/classement_2016.txt
+  255  grep 'Location' ~/Bureau/cours/ann/2016/*.ann | cut | sort | uniq -c | head -n 15 > ~/Bureau/cours/Exercices/classement_2016.txt
+  256  grep 'Location' ~/Bureau/cours/ann/2016/*.ann | cut -d' ' | sort | uniq -c | head -n 15 > ~/Bureau/cours/Exercices/classement_2016.txt
+  257  grep 'Location' ~/Bureau/cours/ann/2016/*.ann | cut | sort | uniq -c | head -n 15 > ~/Bureau/cours/Exercices/classement_2016.txt
+  258  grep 'Location' ~/Bureau/cours/ann/2016/*.ann | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_2016.txt
+  259  grep 'Location' ~/Bureau/cours/ann/2017/*.ann | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_2017.txt
+  260  grep 'Location' ~/Bureau/cours/ann/2018/*.ann | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_2018.txt
+  261  git status
+  262  git add .
+  263  git status
+  264  git commit -m "Exercice2"
+  265  git push
+  266  grep 'Location' ~/Bureau/cours/ann/*/*.ann | grep '-01-' | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_janvier.txt
+  267  grep 'Location' ~/Bureau/cours/ann/*.ann | grep '-01-' | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_janvier.txt
+  268  grep 'Location' ~/Bureau/cours/ann/2016/*.ann | grep '-01-' | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_janvier.txt
+  269  grep 'Location' ~/Bureau/cours/ann/2016/*.ann  | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_janvier.txt
+  270  grep 'Location' ~/Bureau/cours/ann/2017/*.ann  | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_janvier.txt
+  271  grep 'Location' ~/Bureau/cours/ann/2018/*.ann  | cut -d' ' -f3- | sort | uniq -c | sort -nr | head -n 15 > ~/Bureau/cours/Exercices/classement_janvier.txt
+  272  git status
+  273  history
 
