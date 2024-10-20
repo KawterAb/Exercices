@@ -7,7 +7,25 @@ fi
 
 year=$1
 month=$2
-top_n=$3
+number=$3
+
+
+if ! [[ "$year" =~ ^(2016|2017|2018|\*)$ ]]; then
+    echo "Erreur : L'année doit être 2016, 2017, 2018 ou *."
+    exit 1
+fi
+
+
+if ! [[ "$month" =~ ^(0[1-9]|1[0-2]|\*)$ ]]; then
+    echo "Erreur : Le mois doit être entre 01 et 12 ou *."
+    exit 1
+fi
+
+
+if ! [[ "$number" =~ ^[0-9]+$ ]]; then
+    echo "Erreur : Le nombre doit être un entier positif."
+    exit 1
+fi
 
 
 directory="ann"
@@ -34,5 +52,5 @@ if [ -z "$files" ]; then
     exit 1
 fi
 
+grep -h "Location" $files | awk '{print $3}' | sort | uniq -c | sort -nr | head -n $number
 
-grep -h "Location" $files | awk '{print $3}' | sort | uniq -c | sort -nr | head -n $top_n
